@@ -13,11 +13,11 @@ def main():
 		password = k
 		try:
 			zip_file.extractall(pwd=password)
-			password = 'Password found: %s' % password
 		except:
 			pass
 
-	print(password)
+	print(f'Password found: {k}' )
 
 if __name__ == '__main__':
 	main()
+
